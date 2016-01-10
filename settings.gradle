@@ -1,0 +1,3 @@
+rootProject.name = 'tvless'
+include 'tvless-common', 'tvless-api', 'tvless-indexer', 'tvless-notifier'
+

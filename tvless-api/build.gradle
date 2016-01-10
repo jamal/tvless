@@ -1,0 +1,9 @@
+springBoot {
+    mainClass = 'tvless.ApiApplication'
+}
+
+dependencies {
+    compile project(':tvless-common')
+    
+    compile "org.springframework.boot:spring-boot-starter-web"
+}

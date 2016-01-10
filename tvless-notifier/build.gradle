@@ -1,0 +1,10 @@
+springBoot {
+    mainClass = 'tvless.NotifierApplication'
+}
+
+dependencies {
+    compile project(':tvless-common')
+
+    compile "org.springframework.boot:spring-boot-starter-web"
+}
+
