@@ -1,5 +1,5 @@
 def javaVersion = 1.8
-def javaProjects = [ project(':tvless-api'), project(':tvless-indexer'), project(':tvless-notifier'),
+def javaProjects = [ project(':tvless-api'), project(':tvless-updater'), project(':tvless-notifier'),
 project(':tvless-common') ]
 def bootProjects = javaProjects - project(':tvless-common')
 
@@ -38,6 +38,12 @@ configure(javaProjects) {
 
     dependencies {
         compile 'org.slf4j:slf4j-api'
+
+        testCompile 'junit:junit'
+        testCompile 'org.hamcrest:hamcrest-library'
+        testCompile 'org.mockito:mockito-core:1.+'
+        testCompile 'org.springframework:spring-test'
+        testCompile 'com.jayway.jsonpath:json-path'
     }
 }
 

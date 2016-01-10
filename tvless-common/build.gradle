@@ -16,4 +16,12 @@ dependencyManagement {
 }
 
 dependencies {
+    compile 'org.springframework.boot:spring-boot-starter-data-jpa'
+
+    runtime 'org.postgresql:postgresql:9.4-1201-jdbc4'
+    compile 'com.h2database:h2'
+    compile 'org.apache.tomcat:tomcat-jdbc'
+    compile 'com.fasterxml.jackson.core:jackson-annotations'
+    compile 'org.springframework:spring-web'
+
 }
